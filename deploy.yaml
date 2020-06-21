@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: example1
+  labels:
+    app: iciciwebsite
+spec:
+  containers:
+    - name: cont
+      ports:
+       - containerPort: 80
+      image: nginx
